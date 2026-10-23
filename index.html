@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="awsanimate · una web molona con animaciones, partículas y diseño moderno." />
+  <meta name="theme-color" content="#0a0a14" />
+  <title>awsanimate ✦ web molona</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;✦&lt;/text&gt;&lt;/svg&gt;" />
+</head>
+<body>
+  <!-- Fondo de partículas -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- Barra de progreso de scroll -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navegación -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#inicio">
+      <span class="nav__logo">✦</span> awsanimate
+    </a>
+    <nav class="nav__links" aria-label="principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#features">Features</a>
+      <a href="#stats">Números</a>
+      <a href="#cta">Contacto</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero__content reveal">
+        <span class="hero__badge">✦ Hecho con Kiro</span>
+        <h1 class="hero__title">
+          Construye algo
+          <span class="hero__gradient">increíble</span>
+        </h1>
+        <p class="hero__subtitle">
+          Una landing moderna con animaciones fluidas, partículas interactivas
+          y diseño responsive. Publicada directamente en GitHub Pages.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#features">Descubre más</a>
+          <a class="btn btn--ghost" href="https://github.com/sserrano13/awsanimate" target="_blank" rel="noopener">Ver en GitHub ↗</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span></span> scroll
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <h2 class="section__title reveal">¿Por qué es molona?</h2>
+      <p class="section__lead reveal">Todo lo que esperas de una web actual, servido estáticamente.</p>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__icon">⚡</div>
+          <h3>Rápida</h3>
+          <p>HTML, CSS y JS puros. Cero dependencias, carga instantánea.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon">🎨</div>
+          <h3>Animada</h3>
+          <p>Partículas en canvas, reveal al hacer scroll y gradientes vivos.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon">📱</div>
+          <h3>Responsive</h3>
+          <p>Se adapta a móvil, tablet y escritorio sin esfuerzo.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon">🌓</div>
+          <h3>Tema claro/oscuro</h3>
+          <p>Cambia el tema con un clic. Recuerda tu preferencia.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon">♿</div>
+          <h3>Accesible</h3>
+          <p>Marcado semántico, contraste cuidado y foco visible.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon">🚀</div>
+          <h3>Deploy fácil</h3>
+          <p>Un push a <code>main</code> y GitHub Pages hace el resto.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section stats" id="stats">
+      <div class="stat reveal">
+        <span class="stat__num" data-target="100">0</span><span class="stat__suffix">%</span>
+        <span class="stat__label">estático</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-target="0">0</span>
+        <span class="stat__label">dependencias</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-target="60">0</span><span class="stat__suffix">fps</span>
+        <span class="stat__label">animaciones</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-target="3">0</span>
+        <span class="stat__label">archivos</span>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta" id="cta">
+      <div class="cta__box reveal">
+        <h2>¿Listo para hacerla tuya?</h2>
+        <p>Clona el repo, edita el contenido y vuelve a hacer push. Así de simple.</p>
+        <a class="btn btn--primary" href="https://github.com/sserrano13/awsanimate" target="_blank" rel="noopener">Empezar ahora ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Hecho con ✦ por <a href="https://github.com/sserrano13" target="_blank" rel="noopener">sserrano13</a> · desplegado en GitHub Pages</p>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
